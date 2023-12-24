@@ -1,7 +1,9 @@
 import React from 'react'
-import Herosection from './components/HeroSection'
 import Thrust from './components/Thrust'
 import Contact from './Contact'
+import Slider from './components/slider/Slider'
+import Navigation from './components/Navigation/Navigation'
+
 
 const home = () => {
   const data={
@@ -11,7 +13,8 @@ const home = () => {
   }
   return (
     <>
-   <Herosection {...data} />
+   
+   <Slider />
    <Thrust />
    <Contact />
 

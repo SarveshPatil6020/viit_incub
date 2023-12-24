@@ -1,8 +1,6 @@
 import About from "./About"
 import Contact from "./Contact"
 import Home from "./home"
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Header from "./components/Header"
 import Footer from "./components/Footer"
 import {ThemeProvider} from "styled-components"
 import { GlobalStyle } from "./GlobalStyle"
@@ -11,6 +9,9 @@ import ScrollToTop from "./components/ScrollToTop"
 import Services from "./Services"
 import Events from "./Events"
 import ThrustMain from "./ThurstMain"
+
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Navigation from "./components/Navigation/Navigation"
 
 const App = () => {
   const theme={
@@ -34,14 +35,15 @@ const App = () => {
 
   return (
   <ThemeProvider theme={theme}>
-    <GlobalStyle/>
+  <GlobalStyle/>
   <BrowserRouter>
-  <Header/>
+  <Navigation />
+  
    <Routes>
      <Route path="/" element={<Home />}/>
      <Route path="/about" element={<About />}/>
      <Route path="/event" element={<Events />}/>
-     <Route path="/thrust1" element={<ThrustMain />}/>
+     <Route path="/thrust" element={<ThrustMain />}/>
      <Route path="/services" element={<Services />}/>
      <Route path="/contact" element={<Contact />}/> 
      <Route path="*" element={<Error />}/>     

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 import { NavLink } from "react-router-dom";
+
 import { FaInstagram,FaEnvelope, FaFacebook, FaLinkedin  } from "react-icons/fa";
 
 const Footer = () => {
@@ -15,7 +16,7 @@ const Footer = () => {
           </div>
 
           <div className="contact-short-btn">
-            <NavLink to="/">
+            <NavLink to="./">
               <Button>Get Started</Button>
             </NavLink>
           </div>

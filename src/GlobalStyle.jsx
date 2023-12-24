@@ -50,6 +50,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1.8rem;
     font-weight: 400;
   }
+
   p{
     color:${({theme})=> theme.colors.text};
     opacity: .7;
